@@ -112,8 +112,7 @@ BOARD_CHARGER_DISABLE_INIT_BLANK := true
 # LineageHW
 BOARD_USES_LINEAGE_HARDWARE := true
 BOARD_HARDWARE_CLASS += \
-    hardware/lineage/lineagehw \
-    BOARD_HARDWARE_CLASS += $(DEVICE_PATH)/lineagehw
+    BOARD_HARDWARE_CLASS += $(DEVICE_PATH)/lineagehw \
     device/xiaomi/mido/lineagehw
 TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/enable_dt2w"
 
