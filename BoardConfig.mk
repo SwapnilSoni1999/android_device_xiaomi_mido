@@ -109,11 +109,12 @@ TARGET_TS_MAKEUP := true
 BOARD_CHARGER_ENABLE_SUSPEND := true
 BOARD_CHARGER_DISABLE_INIT_BLANK := true
 
-# CMHW
-BOARD_USES_CYANOGEN_HARDWARE := true
+# LineageHW
+BOARD_USES_LINEAGE_HARDWARE := true
 BOARD_HARDWARE_CLASS += \
-    hardware/cyanogen/cmhw \
-    device/xiaomi/mido/cmhw
+    hardware/lineage/lineagehw \
+    BOARD_HARDWARE_CLASS += $(DEVICE_PATH)/lineagehw
+    device/xiaomi/mido/lineagehw
 TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/enable_dt2w"
 
 # CNE / DPM
