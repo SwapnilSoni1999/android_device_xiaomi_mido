@@ -229,8 +229,8 @@ PRODUCT_PACKAGES += \
     android.hardware.keymaster@3.0-impl
 
 # Lights
-PRODUCT_PACKAGES += \
-    lights.msm8953
+#PRODUCT_PACKAGES += \
+  #  lights.msm8953
 
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-impl
