@@ -14,18 +14,27 @@
 # limitations under the License.
 #
 
+DEVICE_PATH := device/xiaomi/land
+
+# Inherit from those products. Most specific first.
+$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
+
+# Inherit from land device
+$(call inherit-product, $(DEVICE_PATH)/device.mk)
 $(call inherit-product, device/xiaomi/mido/full_mido.mk)
 
-# Inherit some common Citrus-CAF stuff.
-$(call inherit-product, vendor/citrus/common.mk)
+# Call QCOM Utils
+$(call inherit-product, $(DEVICE_PATH)/utils.mk)
 
-# To set CAF version
-$(call inherit-product, vendor/citrus/config/common_la.um.mk)
-
-PRODUCT_NAME := citrus_mido
-BOARD_VENDOR := Xiaomi
+PRODUCT_BRAND := Xiaomi
+PRODUCT_DEVICE := mido
+PRODUCT_MANUFACTURER := Xiaomi
+PRODUCT_NAME := aosp_mido
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
+TARGET_VENDOR_PRODUCT_NAME := mido
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BUILD_FINGERPRINT="xiaomi/mido/mido:7.0/NRD90M/V8.5.4.0.NCFMIED:user/release-keys" \
