@@ -127,7 +127,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     camera.msm8953 \
     libmm-qcamera \
-    Snap
+    Snapdragon Camera \
+    SnapdragonMusic \
+    Launcher3
 
 PRODUCT_PACKAGES += \
     camera.device@1.0-impl \

@@ -106,7 +106,7 @@
             64 - Volume rocker
          For example, a device with Home, Back and Menu keys would set this
          config to 83. -->
-      <integer name="config_deviceHardwareKeys">83</integer>
+    <integer name="config_deviceHardwareKeys">83</integer>
 
     <!-- Hardware keys present on the device with the ability to wake, stored as a bit field.
          This integer should equal the sum of the corresponding value for each
@@ -412,5 +412,29 @@
 
      <!-- Does the battery LED support multiple colors? Used to decide if the user can change the colors -->
      <bool name="config_multiColorBatteryLed">true</bool>
+
+     <string name="config_deviceKeyHandlerLib" translatable="false"></string>
+
+     <!--    <string name="config_deviceKeyHandlerClass" translatable="false"></string>-->
+<!--    <integer name="config_longPressOnAppSwitchKeyBehavior">1</integer>    -->
+
+    <integer name="config_longPressOnBackBehavior">0</integer>
+
+<!--    <bool name="config_defaultToNavigationBar">false</bool>-->
+
+<!--    <integer name="config_doubleTapOnAppSwitchKeyBehavior">8</integer>-->
+
+<!--    <bool name="config_enableKeyHandler">true</bool>-->
+
+    <bool name="config_showNavigationBar">false</bool>
+
+	<bool name="doze_pulse_on_pick_up">true</bool>
+
+    <!-- If true, enable the advance anti-falsing classifier on the lockscreen. On some devices it
+         does not work well, particularly with noisy touchscreens. Note that disabling it may
+         increase the rate of unintentional unlocks. -->
+    <bool name="config_lockscreenAntiFalsingClassifierEnabled">false</bool>
+
+    <integer name="config_buttonBrightnessSettingDefault">0</integer>
 
 </resources>
