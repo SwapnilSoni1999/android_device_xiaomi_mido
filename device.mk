@@ -25,6 +25,13 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
+# TARGET_BOARD_PLATFORM specific featurization
+QCOM_BOARD_PLATFORMS := msm8953
+
+# List of targets that use video hw
+MSM_VIDC_TARGET_LIST := msm8953
+
+
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1920
 TARGET_SCREEN_WIDTH := 1080
